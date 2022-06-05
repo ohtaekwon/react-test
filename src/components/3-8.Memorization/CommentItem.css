@@ -2,13 +2,23 @@
   border-bottom: 1px solid black;
   padding: 10px;
   cursor: pointer;
+  margin: 0 auto;
+  width: 300px;
+  left: 50%;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: royalblue;
 }
 span {
+  color: white;
   display: inline-block;
-  align-items: center;
-  text-align: justify;
-  vertical-align: middle;
-  line-height: 20px;
+
+  width: 300px;
+  height: 20px;
+  display: flex;
+  align-items: center; /*세로 정렬*/
+  justify-content: center; /*가로 정렬*/
 }
 .title {
 }

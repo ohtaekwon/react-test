@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useCallback } from "react";
 import CommentItem from "./CommentItem";
 
 export default function Comments(props) {
+  const handleChange = useCallback(() => {
+    console.log("눌림");
+  }, []);
   return (
     <div>
       {props.commentList.map((comment) => (
@@ -10,6 +13,7 @@ export default function Comments(props) {
           title={comment.title}
           content={comment.content}
           likes={comment.likes}
+          onClick={handleChange}
         />
       ))}
     </div>
