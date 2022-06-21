@@ -8,6 +8,7 @@ import "./App.css";
 // import Input from "./components/3-7.HOC/Input";
 // import Button from "./components/3-7.HOC/Button";
 // import Memo from "./components/3-8.Memorization/Memo";
+import Example from "./components/3-10.Context/Example";
 // import PracticeWelcomDiallog from "./components/3-5.Composition/PracticeWelcomDiallog";
 // import Event from "./components/2-7.Event/Event";
 // import Condition from "./components/2-8.ConditionalRendering/Condition";
@@ -23,6 +24,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+      <Example />
       {/* <PracticeWelcomDiallog /> */}
       {/* <Memo /> */}
       {/* <Input /> */}
