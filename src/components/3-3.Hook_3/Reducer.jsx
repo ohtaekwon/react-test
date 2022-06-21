@@ -3,6 +3,7 @@ import React, { useReducer, useState } from "react";
 export default function Reducer() {
   const initialState = { count: 0, name: "tk" };
 
+  // state, action
   function reducer(state, action) {
     switch (action.type) {
       case "reset":
@@ -15,6 +16,7 @@ export default function Reducer() {
         throw new Error();
     }
   }
+  // useReducer(reducer함수, 초깃값)
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (

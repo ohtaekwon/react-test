@@ -1,13 +1,14 @@
-import React, { useReducer, useState } from "react";
+import React from "react";
+import { useReducer } from "react";
 
-export default function prac2() {
+export default function Prac2() {
   const initialCount = { count: 0 };
-  // redecer은 함수
+  // state, action
   function reducer(state, action) {
     switch (action.type) {
       case "reset":
-        return { count: initialCount.count };
-      case "increase":
+        return initialCount;
+      case "increse":
         return { count: state.count + 1 };
       case "decrease":
         return { count: state.count - 1 };
@@ -19,28 +20,10 @@ export default function prac2() {
 
   return (
     <div>
-      Count : {count}
-      <button
-        onClick={() => {
-          dispatch(initialCount);
-        }}
-      >
-        Reset
-      </button>
-      <button
-        onClick={() => {
-          dispatch();
-        }}
-      >
-        -
-      </button>
-      <button
-        onClick={() => {
-          dispatch((prev) => prev + 1);
-        }}
-      >
-        +
-      </button>
+      Reducx Count : {state.count}
+      <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
+      <button onClick={() => dispatch({ type: "increse" })}>+</button>
+      <button onClick={() => dispatch({ type: "decrease" })}>-</button>
     </div>
   );
 }

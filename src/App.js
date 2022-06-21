@@ -1,14 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
-import State from "./components/3-3.Hook_3/State";
-import Reducer from "./components/3-3.Hook_3/Reducer";
-import WelcomeDialog from "./components/3-5.Composition/WelcomeDialog";
-// import Dialog from "./components/3-6.Composition2/Dialog";
-import ThankyouDialog from "./components/3-6.Composition2/ThankyouDialog";
-import Input from "./components/3-7.HOC/Input";
-import Button from "./components/3-7.HOC/Button";
+// import State from "./components/3-3.Hook_3/State";
+// import Reducer from "./components/3-3.Hook_3/Reducer";
+// import WelcomeDialog from "./components/3-5.Composition/WelcomeDialog";
+// // import Dialog from "./components/3-6.Composition2/Dialog";
+// import ThankyouDialog from "./components/3-6.Composition2/ThankyouDialog";
+// import Input from "./components/3-7.HOC/Input";
+// import Button from "./components/3-7.HOC/Button";
 // import Memo from "./components/3-8.Memorization/Memo";
-
+// import PracticeWelcomDiallog from "./components/3-5.Composition/PracticeWelcomDiallog";
 // import Event from "./components/2-7.Event/Event";
 // import Condition from "./components/2-8.ConditionalRendering/Condition";
 // import List from "./components/2-9.List/List";
@@ -23,16 +23,15 @@ import Button from "./components/3-7.HOC/Button";
 function App() {
   return (
     <div className="App">
+      {/* <PracticeWelcomDiallog /> */}
       {/* <Memo /> */}
-      <Input />
-      <br />
-      <Button />
-      <br />
+      {/* <Input /> */}
+      {/* <Button /> */}
       {/* <Dialog /> */}
-      <ThankyouDialog />
-      <WelcomeDialog />
-      <Reducer />
-      <State />
+      {/* <ThankyouDialog /> */}
+      {/* <WelcomeDialog /> */}
+      {/* <Reducer />
+      <State /> */}
       {/* <UnControlledComponent /> */}
       {/* <ControlledComponent /> */}
       {/* <List /> */}
